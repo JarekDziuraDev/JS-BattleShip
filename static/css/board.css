@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body {
+    
+    font-family: 'Raleway', sans-serif;
+    
+  }
+
+.zoomout{
+    zoom: 80%;
+}
+
+:root {
+    --border-width: 5px;
+    --cell-size: 50px;
+    --primary-color: #c0c0c0;
+    --primary-color-dark: #808080;
+}
+
+.button{
+    background-color: rgba(0, 1, 31, 0.748);
+    padding: 0.7rem;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color:ivory;
+    
+    text-transform: uppercase;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    border-color:rgba(34, 27, 109, 0.748);
+    border-width: 2px;
+    border-radius: 5%;
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgba(236, 6, 6, 0.926);
+    color: coral;
+    border-color:rgb(0, 0, 0);    
+    transition: border-color .15s;
+    transition: text-shadow .15s;
+    transition: color .15s;
+  }
+
+.game__board {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #333;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    margin: 0px auto;
+}
+
+
+
+.goUp{
+margin-bottom: auto;
+margin-left: 5px;
+font-size: 20px
+}
+
+.field {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    cursor: pointer;
+    background-color: #aaa;
+    text-align: center;
+    border: var(--border-width) solid;
+    align-items: center;
+}
+
+.field--convex {
+    
+    border-color: #fff var(--primary-color-dark) var(--primary-color-dark) #fff;
+}
+
+.field--concave {
+    
+    border-color: var(--primary-color-dark) #fff #fff var(--primary-color-dark);
+}
+
+.field--discovered {
+    background-color: rgba(255, 255, 255, 0.919);
+}
+
+.field--undiscovered {
+    background-color: #aaa;
+}
+
+.field--hit {
+    background-color: red;
+}
+
+.field--mouse--on {
+    background-color: rgba(0, 0, 255, 0.378);
+}
+
+.field--one_ship {
+    background-color: rgb(100,100,100);
+}
+
+.field--two_ship {
+    background-color: rgb(100,50,50);
+}
+
+.field--three_ship {
+    background-color: rgb(50,50,100);
+}
+
+.field--four_ship {
+    background-color: rgb(50,0,50);
+}

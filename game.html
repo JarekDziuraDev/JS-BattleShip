@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/board.css"/>
+    <link rel="stylesheet" href="/static/css/board_menu.css"/>
+    <style>
+    #myVideo {
+        position: fixed;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        }
+      </style>
+</head>
+<body>
+    <board class="game__board zoomout" data-board></board>
+
+    <div class="menu__ship" data-menu-ship>
+        
+        <div class="menu_button field--convex" data-ship-menu-buttons data-index="1">
+            <img src="static/images/ship_1.png" class="one_field"  data-index="1" />
+        </div>
+        
+        <div class="menu_button field--convex" data-ship-menu-buttons
+        data-index="2">
+            <img src="static/images/ship_2.png" class="two_field" 
+            data-index="2"/>
+        </div>
+        
+        <div class="menu_button field--convex" data-ship-menu-buttons data-index="3">
+            <img src="static/images/ship_3.png" class="three_field" data-index="3" />
+        </div>
+        
+        <div class="menu_button field--convex" data-ship-menu-buttons data-index="4">
+            <img src="static/images/ship_4.png" class="four_field" data-index="4"/>
+        </div>
+    </div>
+
+
+    <!-- do wystylizowania -->
+    <div class="menu__ship" data-menu-ship>        
+        <p style="margin-left: 5px;"> LEFT: </p>
+        <p class="goUp"> Partol boat </p>
+        <p style="font-size: 25px; " !important data-one>0</p>
+        <p class="goUp"> Cruiser </p>
+        <p style="font-size: 25px; " !important data-two>0</p>
+        <p class="goUp"> Destroyer</p>
+        <p style="font-size: 25px; " !important data-three>0</p>
+        <p class="goUp"> Aircraft Carrier </p>
+        <p style="font-size: 25px; " !important data-four>0</p>
+        <button class='button' data-end-phase>DONE</button>
+    </div>
+
+    <div class="menu__player menu__ship" data-menu-player>
+        
+        <p data-player></p>
+        
+        
+        <p data-player-score></p>
+        
+        <button class="button hide" data-player-next>Next</button>
+    </div>
+
+    <div class="modal hide" data-menu-win>
+        <div class="modal__content">
+            <h2 class="modal__text" data-menu_win_name>YOU WON! </h2>
+            <h2 class="modal__text" data-menu_win_score>YOUR SCORE:</h2>
+            ><a href="game_menu.html">
+                <button class="modal__button" data-menu-win-btn>
+                    OK
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <script type="module" src="./app/placementphase.js"></script>
+    <video autoplay muted loop id="myVideo">
+        <source src="static/images/my_video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

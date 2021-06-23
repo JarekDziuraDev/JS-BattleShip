@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game menu</title>
+    
+    <link rel="stylesheet" href="/static/css/menu.css"/>
+</head>
+<body>
+    <nav>
+        <h1>PLAYER vs CPU</h1>
+    </nav>
+    <article class="modal">
+        <section>
+            
+            <input id="name_text_box" placeholder="enter your name">
+            
+            <button id="name_text_box_ok">
+                OK
+            </button>
+            <button>
+                BACK
+            </button>
+            <button>
+                <a href="game.html">GRAJ</a>                
+            </button>
+        </section>
+    </article>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="static/images/my_video.mp4" type="video/mp4">
+    </video>
+
+    <script type="module" src="./app/menu.js"></script>
+</body>
+</html>

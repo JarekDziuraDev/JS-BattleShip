@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game menu</title>
+    
+    <link rel="stylesheet" href="/static/css/menu.css"/>
+</head>
+<body>
+    <nav>
+        <h1>PLAYER vs PLAYER</h1>
+    </nav>
+    <div class="divstyle">
+        <form style="padding: 6px;">
+            <div class="navulli">enter your nicknames:</div><br>
+        
+        <input class = 'input' id="name_text_box1" type="text" value="PLAYER1"></input><br>
+        <input class = 'input' id="name_text_box2" type="text" value="PLAYER2"></input><br>
+        <a href="game.html" style="text-decoration: none;"><input class = 'button' id="name_text_box_ok" type="button" value="PLAY !"></input></a>
+        
+    </form>
+    </div>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="static/images/my_video.mp4" type="video/mp4">
+    </video>
+
+    <script type="module" src="./app/menu.js"></script>
+</body>
+</html>

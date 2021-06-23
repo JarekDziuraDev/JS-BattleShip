@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/* sekcja kolorów które są używane w menu */
+:root {
+    --menu-background-color: #bbb;
+    --menu-background-color-dark: #777;
+    --menu-button-hover: rgb(24,200,24);
+
+
+    --primary-color: #c0c0c0;
+    --primary-color-dark: #808080;
+
+}
+
+/*resetuje wszystkie ustawienia przed pobraniem stylów*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    
+    font-family: 'Raleway', sans-serif;
+    
+  }
+  
+
+.menu__ship {
+    display: flex;
+    border-radius: 5%;
+    width: 620px;
+    height: 100px;
+    background-color:rgba(0, 1, 31, 0.85);
+    margin: 0px auto;
+    align-items: center;
+    color:ivory;
+}
+
+.menu_button {
+    display: inline-block;
+    background-color: rgb(0, 1, 31);
+    cursor: pointer;    
+    padding: 5px;
+    border: 7px solid;
+    border-radius: 4%;
+    margin: 0px auto;
+    border: var(--border-width) solid;
+}
+
+.field--convex {
+    border-color: #fff var(--primary-color-dark) var(--primary-color-dark) #fff;
+}
+
+.field--concave {
+    border-color: var(--primary-color-dark) #fff #fff var(--primary-color-dark);
+}
+
+.one_field {    
+    width: 50px;    
+}
+
+.two_field {
+    width: 100px;
+}
+
+.three_field {
+    width: 150px;
+}
+
+.four_field {
+    width: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+p { 
+    padding: 5px;
+}
+
+.menu__player button {
+    margin-left: 220px;
+    margin-top: 20px;
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 0, 85, .8);
+  }
+
+  .modal__content {
+      width: 50vw;
+      height: 50vh;
+      background-color: rgba(0, 1, 31, 0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .modal__text {
+      fonst-size: 25px;
+      text-align: center;
+      color:ivory;
+  }
+
+  .modal__button {
+        cursor: pointer;
+        background-color: rgba(0, 1, 31, 0.748);
+        padding: 0.7rem;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        color:ivory;
+    
+        text-transform: uppercase;
+        display: flex;
+        
+        border-color:rgba(34, 27, 109, 0.748);
+        border-width: 2px;
+        border-radius: 5%;
+  }
+
+  .modal__button:hover {
+        background-color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgba(236, 6, 6, 0.926);
+        color: coral;
+        border-color:rgb(0, 0, 0);    
+        transition: border-color .15s;
+        transition: text-shadow .15s;
+        transition: color .15s;
+  }
+
+  .hide {
+      display: none;
+  }
